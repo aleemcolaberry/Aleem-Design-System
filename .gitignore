@@ -1,0 +1,30 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+
+# Tooling. Pages run as plain files. The only build step is scripts/build-kits.mjs (JSX to ui_kits/*/kit.js);
+# node_modules holds its compiler and the audit browser driver and is never committed.
+node_modules/
+dist/
+.cache/
+*.log
+npm-debug.log*
+package-lock.json
+
+# Raw Claude Design downloads dropped here for a re-sync. The unbundled files are the repo; exports stay local.
+Claude Design Files/
+_source-exports/
+*.zip
+AgentCory Design System*.html
+.render-check.json
+
+# Reference uploads: design inputs handed to Claude Design (pasted screenshots, photos, personal PDFs).
+# They stay local, as in the AiXFreight repo. Only the brand logo that README.md points at is tracked.
+uploads/*
+!uploads/Logo_Cory-BpxDw6Ld.svg
+.claude/
